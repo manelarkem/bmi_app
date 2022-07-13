@@ -20,7 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Body Mass Index'), centerTitle: true),
+      appBar: AppBar(title: const Text('Body Mass Index (BMI)'), centerTitle: true),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Colors.blueGrey,
+                    color: Color.fromRGBO(46, 32, 102,9),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -85,8 +85,11 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Container(
-              color: Colors.green,
-              width: double.infinity,
+              width: 320,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.indigo,
+              ),
               height: MediaQuery.of(context).size.height / 16,
               child: TextButton(
                 onPressed: () {
@@ -120,8 +123,8 @@ class _MyHomePageState extends State<MyHomePage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: (isMale && type == 'male') || (!isMale && type == 'female')
-                ? Colors.green
-                : Colors.blueGrey,
+                ? Colors.indigo
+                : Color.fromRGBO(46, 32, 102,9),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -144,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.blueGrey,
+          color: Color.fromRGBO(46, 32, 102,9),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

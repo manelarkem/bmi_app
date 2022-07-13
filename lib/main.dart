@@ -12,24 +12,24 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.green,
-        canvasColor: Colors.white,
+        primarySwatch: Colors.indigo,
+        canvasColor: Color.fromRGBO(24, 15, 59,9),
         iconTheme: const IconThemeData(color: Colors.white),
         textTheme: const TextTheme(
           headline1: TextStyle(
             fontSize: 45,
-            fontWeight: FontWeight.w800,
-            color: Colors.black,
+            fontWeight: FontWeight.normal,
+            color: Colors.white,
           ),
           headline2: TextStyle(
             fontSize: 25,
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
+            fontWeight: FontWeight.normal,
+            color: Colors.white,
           ),
           bodyText1: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
-            color: Colors.black,
+            color: Colors.white,
           ),
         ),
       ),
